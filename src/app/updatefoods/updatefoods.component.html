@@ -1,0 +1,103 @@
+<h1 style="text-align: center"> PRODUCT DETAILS </h1>
+
+<h1 style="text-align: center;"> FOOD DETAILS</h1>
+                              
+                              
+                              
+                                
+                                 <div class="container">       
+                              
+                                      <table align="center"    >
+                                <br>
+                                          <tr>
+                                           <td>Name :</td> <td><input type="text"required [(ngModel)]="providerDetails.name" [ngModelOptions]="{standalone: true}"> </td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Image :</td> <td><input type="text" required [(ngModel)]="providerDetails.img" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Food Category :  </td>
+                                           <td>
+                                          <select name="category" required [(ngModel)]="providerDetails.category">
+                                              <option value="South Indian">South Indian</option>
+                                              <option value="North Indian">North Indian</option>
+                                              <option value="Chineese">Chinesse</option>
+                                              
+                                            </select>
+                                          </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Break Fast :</td>
+                                                  <td>
+                                                          <select name="choose" required [(ngModel)]="providerDetails.breakfast">
+                                                              <option value=true>available</option>
+                                                              <option value=false>not available</option>                                                   
+                                                            </select>
+                                                          </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Lunch :</td>
+                                                              <td>
+                                                                      <select name="choose" required [(ngModel)]="providerDetails.lunch">
+                                                                          <option value=true>available</option>
+                                                                          <option value=false>not available</option>                                                   
+                                                                        </select>
+                                                                      </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>Dinner :</td>
+                                                                          <td>
+                                                                                  <select name="choose" required [(ngModel)]="providerDetails.breakfast">
+                                                                                      <option value=true>available</option>
+                                                                                      <option value=false>not available</option>                                                   
+                                                                                    </select>
+                                                                                  </td>
+                                                                                  </tr>
+                                                                                  
+                                               
+                                          <tr>
+                                           <td>Lat</td> <td><input type="number"  required [(ngModel)]="providerDetails.lat" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Lon:</td> <td><input type="number"  required [(ngModel)]="providerDetails.lon" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Zoom :</td> <td><input type="number" required [(ngModel)]="providerDetails.zoom" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                          <td>Ratings :</td> <td><input type="number"  required [(ngModel)]="providerDetails.rating" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Address :</td> <td><input type="text" required [(ngModel)]="providerDetails.address" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Price :</td> <td><input type="number" required [(ngModel)]="providerDetails.price" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                           <td>Quantity:</td> <td><input type="number" required [(ngModel)]="providerDetails.quantity" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          
+                                          <tr>
+                                              <td>Available :</td> <td><input type="number" required [(ngModel)]="providerDetails.available" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                                  
+                                          <tr>
+                                           <td>Tax :</td> <td><input type="number" required [(ngModel)]="providerDetails.tax" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                           <tr>
+                                              <td>Provider Id :</td> <td><input type="number" required [(ngModel)]="providerDetails.providerId" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr>
+                                          <tr>
+                                            <td>Provider Name :</td> <td><input type="text" required [(ngModel)]="providerDetails.provider" [ngModelOptions]="{standalone: true}"></td><br>
+                                        </tr>
+                                          <!-->
+                                          <tr>
+                                              <td>UpdatedAt :</td> <td><input type="text" required [(ngModel)]="providerDetails.updatedAt" [ngModelOptions]="{standalone: true}"></td><br>
+                                          </tr> -->
+                                          
+                                         </table>
+                                         <div style="text-align: center" >
+                                         <input type="submit" value="Submit" (click)="update()" style="box-align:center;">
+                                         </div>
+                                      </div>
+                              
